@@ -1,0 +1,15 @@
+cn.synu.bean
+cn.synu.crm.annotation
+cn.synu.crm.container
+cn.synu.crm.dao
+cn.synu.crm.dao.impl
+cn.synu.crm.domain
+cn.synu.crm.filter
+cn.synu.crm.interceptor
+cn.synu.crm.service
+cn.synu.crm.service.impl
+cn.synu.crm.tag
+cn.synu.crm.util
+cn.synu.crm.web.action
+cn.synu.crm.web.form
+junit
