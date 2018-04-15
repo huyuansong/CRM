@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.show_sql">true</property>
+		
+		<!-- 配置启用二级缓存 -->
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		
+		<!--配置二级缓存的供应商 -->
+		<property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+		
+		<!-- 启用查询缓存 -->
+		<property name="hibernate.cache.use_query_cache">true</property>
+		
+		
+		<mapping resource="cn/synu/crm/domain/SysUserGroup.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/SysRole.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/SysUser.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/SysPopedom.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/SysPopedomPrivilege.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/SysMenu.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/SysMenuPrivilege.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/Company.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/SysCodeRule.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/SysDictionaryType.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/Province.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/City.hbm.xml"/>
+		<mapping resource="cn/synu/crm/domain/SysOperateLog.hbm.xml"/>
+		
+		<!-- 配置类级别的二级缓存 -->
+		<class-cache class="cn.synu.crm.domain.SysPopedomPrivilege" usage="read-write"/>
+		<class-cache class="cn.synu.crm.domain.SysMenu" usage="read-write"/>
+		<class-cache class="cn.synu.crm.domain.SysMenuPrivilege" usage="read-write"/>
+	</session-factory>
+</hibernate-configuration>
