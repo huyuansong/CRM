@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
     version="2.0">
-  <description>myitcast 1.o core library</description>
+  <description>mysynu 1.o core library</description>
   <display-name>synu core</display-name>
   <tlib-version>1.0</tlib-version>
   <short-name>synu</short-name>
