@@ -47,10 +47,6 @@
 		<button type='button' class='button' onMouseOver="this.className='button_over';" onMouseOut="this.className='button';"  
 		        onClick="document.forms[0].submit();">
 		        <img src="${pageContext.request.contextPath}/ui/images/button/baocun.png" border='0' align='absmiddle'>&nbsp;保存</button>
-		<button type='button' class='button' onMouseOver="this.className='button_over';" onMouseOut="this.className='button';"  onClick="goChangePerson2()"><img src="${pageContext.request.contextPath}/ui/images/button/jinshourbg.png" border='0' align='absmiddle'>&nbsp;经手人变更</button>
-		<button type='button' class='button' onMouseOver="this.className='button_over';" onMouseOut="this.className='button';"  onClick="OpenWin('/common/share/ShareSet.jsp?pid=7&owner_usr=1&c_name=777&m_type=customer','',500,400)"><img src="${pageContext.request.contextPath}/ui/images/button/gongxiang.png" border='0' align='absmiddle'>&nbsp;共享</button>
-		<button type='button' class='button' onMouseOver="this.className='button_over';" onMouseOut="this.className='button';"  onClick="OpenWin('/crm/customer/customer.do?method=print&id=7')"><img src="${pageContext.request.contextPath}/ui/images/button/dayin.png" border='0' align='absmiddle'>&nbsp;打印</button>
-		<button type='button' class='button' onMouseOver="this.className='button_over';" onMouseOut="this.className='button';"  onClick="do_backList('/crm/cvisit/customer.do?method=list');"><img src="${pageContext.request.contextPath}/ui/images/button/fanhui.png" border='0' align='absmiddle'>&nbsp;返回</button>
 	</div>
 <table width="100%" border="0" cellspacing="0" class="tabForm">
   <tr>

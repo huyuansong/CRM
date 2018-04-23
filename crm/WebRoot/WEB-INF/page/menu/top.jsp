@@ -9,8 +9,8 @@
 <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="top">
   <tr> 
     <td class="logo">
-        <div class="subNav">系统管理员，欢迎您！| <a href="#">
-           </a> | <a href="#">帮助</a>
+        <div class="subNav">系统管理员，欢迎您！|
+        <a href="${pageContext.request.contextPath}/index.jsp ">退出</a>
         </div>
     </td>
   </tr>

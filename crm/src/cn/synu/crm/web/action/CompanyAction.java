@@ -494,4 +494,9 @@ public class CompanyAction extends BaseAction implements ModelDriven<CompanyForm
 	public CompanyForm getModel() {
 		return companyForm;
 	}
+	
+	public String view(){
+		
+		return "view";
+	}
 }
